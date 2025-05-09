@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Assistant:wght@200..800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    transform: scale(1.0);
+    background: color #f4f0EA;
+    color:#000000;
+    font-family: "Arimo", sans-serif;
+    font-weight: 100;
+}
+
+header {
+    padding: 2rem;    
+    background-color:darkgray;
+    color:#622e6f;
+    text-align: center;
+}
+
+main {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+h2 {
+    color:#622e6f;
+    font-size: 1.3rem;
+}
+
+input[type="radio"], input[type="checkbox"] {
+     accent-color:#000000;
+}
+
+input[type="text"] {
+     width: 50%;
+     padding: 3px
+     border-radius: 5px;
+}
+
+input::placeholder {
+    color:#000000;
+}
+
+select {
+    cursor: pointer;
+    border: none;
+}
+
+.container_data{ /*Input de data*/
+    border: 2px solid #000000;
+    border-radius: 7px;
+    padding: 4px;
+    background-color:#dbc7df;
+}
+
+img { /*Imagem de Java*/
+    width: 15%;
+}
+
+h5 { /*Escreva tudo em minusculo*/
+    color:#622e6f;
+}
+
+.container { /*Para regurar os dois botões*/
+display: flex;
+justify-content: center;
+gap: 25px; /*Espaço entre os botões */
+margin-right: auto;
+}
+
+.calcular-pontuacao{ /* Designer Botão para calcular pontuaçõo*/
+width: 250px;
+height: 50px;
+border-radius: 10px;
+background-color: #895796;
+color:white;
+}
+
+.reiniciar{ /* Designer Botão para reniciar o quizz*/
+width: 250px;
+height: 50px;
+border-radius: 10px;
+background-color: #895796;
+color:white;
+}
+/**/
+.pontuacao-container{ /*Para colocar a mensagem de PONTUAÇÃO ao lado de PONTUAÇÃO FINAL*/
+    display: flex;
+    gap: 120px;
+}
+
+.mensagem-pontuacao{ /*Para o designer da mensagem de PONTUAÇÃO*/
+    margin-top: 40px;
+    color: red;
+}
+
+th { /*Cabeçario ta tabela*/
+    background-color: rgb(208, 208, 208);
+}
+
+ol { /*lista de respostas*/
+    margin: 1rem;
+}
+
+footer { /*Rodapé*/
+    padding: 2rem;
+    background-color: darkgray;
+    text-align: center;
+}

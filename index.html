@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Quiz para testar sua inteligência</title>
+  <meta name="description" content="Um quiz interativo para teste de inteligência">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>Quiz interativo para testar sua inteligência</h1>
+    <p>Teste seus conhecimentos e veja qual a sua pontuação!</p>
+  </header>
+  <main>
+    <section>
+      <h2>Sobre esse quiz</h2>
+      <p> <strong>Esse quiz</strong> foi desenvolvido para testar seus conhecimentos
+      </p>
+      <p>Você encontrarar diferentes tipos de perguntas, incluindo
+        multiplas escolhas, texto e perguntas de data. desafie-se com este quiz!</p>
+    </section>
+
+    <!--Pergunta número 1-->
+    <section>
+      <h2>Pegunta 1: Quando o barco de titanic afundou?</h2>
+      <form> <input type="radio" value="16 de novembro de 1992" id="p1a" name="pergunta1" 
+        <label for="pl1">16 de novembro de 1992</label><br>
+
+        <input type="radio" value="22 de janeiro de 1956" id="plb" name="pergunta1"
+        <label for="pl2">22 de janeiro de 1956</label><br>
+
+        <input type="radio" value="14 de abril de 1912" id="p1c" name="pergunta1"
+        <label for="pl3">14 de abril de 1912</label><br>
+
+        <input type="radio" value="16 de abril de 1908" id="p1d" name="pergunta1" 
+        <label for="pl4">16 de abril de 1908</label><br>
+      </form>
+    </section>
+
+    <!--pergunta 2-->
+    <section>
+      <h2>Pergunta 2: Quem descobriu o brasil? </h2>
+      <form>
+        <input type="text" id="p2" name="pergunta2" placeholder="Digite sua resposta...">
+      </form>
+    </section>
+
+    <!---pergunta 3: Digite sua resposta-->
+    <section>
+      <h2>Pergunta 3: Qual o dia é comemorada a independência do Brasil?</h2>
+      <form>
+        <input type="text" id="p3" name="pergunta3" placeholder="Digite sua resposta...">
+      </form>
+    </section>
+
+    <!----pergunta 4 de varias escolhas-->
+    <section>
+      <h2>Perguta 4: Qual a capital do Brasil?</h2>
+      <form>
+        <input type="checkbox" value="São Paulo" id="p4a" name="pergunta4a">
+        <label for="p4a">São Paulo</label><br>
+
+        <input type="checkbox" value="Rio de Janeiro" id="p4b" name="pergunta4b">
+        <label for="p4b">Rio de Janeiro</label><br>
+
+        <input type="checkbox" value="Brasilia" id="p4c" name="pergunta4c">
+        <label for="p4c">Brasilia</label><br>
+
+        <input type="checkbox" value="Salvador" id="p4d" name="pergunta4d">
+        <label for="p4d">Salvador</label><br>
+      </form>
+    </section>
+
+    <!---pergunta 5: menu suspenso, tipo de escolha uma cor de roupa, usado em site de lojas-->
+    <section>
+      <h2>Pergunta 5: Quando foi proclamada a República no Brasil?</h2>
+      <form>
+        <select class="container_data" name="pergunta5" id="p5">
+          <option value="13 de dezembro de 1888">13 de dezembro de 1888</option>
+          <option value="07 de setembro de 1822">07 de setembro de 1822</option>
+          <option value="15 de novembro de 1889">15 de novembro de 1889</option>
+          <option value="05 de março de 1889">05 de março de 1889</option>
+        </select>
+      </form>
+    </section>
+
+    <!---Pergunta 6-->
+    <section>
+      <h2>Pegunta 6: Quantos dentes tem na boca do ser humano?</h2>
+      <form>
+        <input type="radio" value="32" id="p6a" name="pergunta6" 
+        <label for="pl1">32</label><br>
+
+        <input type="radio" value="34" id="p6b" name="pergunta6"
+        <label for="pl2">34</label><br>
+
+        <input type="radio" value="36" id="p6c" name="pergunta6"
+        <label for="pl3">36</label><br>
+
+        <input type="radio" value="37" id="p6d" name="pergunta6" 
+        <label for="pl4">37</label><br>
+      </form>
+    </section>
+
+    <!---pergunta 7: pergunta com imagem-->
+    <section>
+      <h2>Pergunta 7: Qual o nome da linguagem de programação na imagem abaixo?</h2>
+       <img src="pm8.jpeg" alt=""><br>
+        <input type="text" id="p7" name="pergunta7" placeholder="Digite sua resposta...">
+    </section>
+
+    <!--Pergunta 8: multipla escolha-->
+    <section>
+      <h2>Pergunta 8: Qual rede social está fazendo mais sucesso no momento?</h2>
+      <h5>(Escreva tudo em minusculo)</h5>
+      <form>
+        <input type="text" id="p8" name="pergunta8" placeholder="Digite sua resposta...">
+      </form>
+    </section>
+
+    <!--Pergunta 9-->
+    <section>
+      <h2>Pergunta 9: Qual a marca de celular mais usada atualmente?</h2>
+      <form>
+        <input type="checkbox" id="p9a" name="pergunta9a"> 
+        <label for="p9a">Samsung</label><br>
+
+        <input type="checkbox" id="p9b" name="pergunta9b">
+        <label for="p9b">Apple</label><br>
+
+        <input type="checkbox" id="p9c" name="pergunta9c">
+        <label for="p9c">Motorola</label>
+      </form>
+    </section><br>
+  
+    <section>
+  <div class="container">
+    <button onclick="calcularPontuacao()" class="calcular-pontuacao">Enviar</button>
+    <button onclick="location.reload()" id="reiniciar" class="reiniciar">Reiniciar</button>
+  </div> 
+
+  <div class="pontuacao-container">
+    <h2>Pontuação Final: <span id="resultado">0</span></h2> 
+    <p class="mensagem-pontuacao" id="mensagem"></p>
+  </div>
+</section>
+  
+   <!---TABELA DE PONTUAÇÃO-->
+    <section>
+      <h2>Tabela de pontuação</h2>
+      <table border="2">
+        <!---para o cabeçario-->
+        <thead>
+          <tr>
+            <th>Pontuação</th>
+            <th>Avaliação</th>
+          </tr>
+        <tbody>
+          <!---Para  informaçoes na tabela-->
+             <tr>
+               <td>0-3</td>
+               <td>Sua pontuação está baixa</td>
+             </tr>
+
+             <tr>
+               <td>4-6</td>
+               <td>Está com uma pontuação razoavel</td>
+             </tr>
+
+             <tr>
+               <td>7-9</td>
+               <td>Você é muito inteligente</td>
+           </tbody>
+           </tr>
+
+      </table>
+    </section>
+   
+    <!--lISTA DE RESPOSTAS------>
+    <section>
+      <h2>Verifique suas respostas</h2>
+       <details>
+         <summary>Clique aqui para ver as respostas</summary>
+      <ol>
+         <li>14 de abriu de 1912</li>
+         <li>Pedro Alvares Cabral</li>
+         <li>07 de setembro</li>
+         <li>Porque tenho dinheiro</li>
+         <li>21 de dezembro</li>
+         <li>32</li>
+         <li>Java</li>
+         <li>Tiktok</li>
+         <li>Apple</li>
+      </ol>
+     </details>
+    </section>
+
+    <!--Formulario de feedback...-->
+    <section>
+       <h2>Deixe aqui o seu feedback</h2>
+       <form onsubmit="enviarFeedback(event)">
+         <fieldset>
+           <legend>Informaçoes de contato</legend><br>
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome"><br>
+        <br>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email"><br>
+        <br>
+
+        <label for="comentarios">Comentarios:</label><br>
+        <textarea id="comentarios" name="comentarios"
+        rows="4"cols="50" placeholder="Digite seus comentarios aqui..."></textarea>
+        <button onclick="alert('Feedback enviado')">Enviar</button>
+         </fieldset>
+
+       </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy Quiz de inteligência. Todos os direitos reservados</p>
+    <p>Para conhecer outros quizzes <a href="https://www.youtube.com/" target="-">clique aqui</a></p> 
+  </footer>
+  <script src="app.js"></script>
+</body>
+
+</html>
