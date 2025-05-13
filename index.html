@@ -4,6 +4,7 @@
 <head>
   <title>Quiz para testar sua inteligência</title>
   <meta name="description" content="Um quiz interativo para teste de inteligência">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -12,7 +13,7 @@
   <header>
     <h1>Quiz interativo para testar sua inteligência</h1>
     <p>Teste seus conhecimentos e veja qual a sua pontuação!</p>
-  </header>
+  </header><br>
   <main>
     <section>
       <h2>Sobre esse quiz</h2>
@@ -37,7 +38,7 @@
         <input type="radio" value="16 de abril de 1908" id="p1d" name="pergunta1" 
         <label for="pl4">16 de abril de 1908</label><br>
       </form>
-    </section>
+    </section><br>
 
     <!--pergunta 2-->
     <section>
@@ -45,7 +46,7 @@
       <form>
         <input type="text" id="p2" name="pergunta2" placeholder="Digite sua resposta...">
       </form>
-    </section>
+    </section><br>
 
     <!---pergunta 3: Digite sua resposta-->
     <section>
@@ -53,7 +54,7 @@
       <form>
         <input type="text" id="p3" name="pergunta3" placeholder="Digite sua resposta...">
       </form>
-    </section>
+    </section><br>
 
     <!----pergunta 4 de varias escolhas-->
     <section>
@@ -71,7 +72,7 @@
         <input type="checkbox" value="Salvador" id="p4d" name="pergunta4d">
         <label for="p4d">Salvador</label><br>
       </form>
-    </section>
+    </section><br>
 
     <!---pergunta 5: menu suspenso, tipo de escolha uma cor de roupa, usado em site de lojas-->
     <section>
@@ -84,7 +85,7 @@
           <option value="05 de março de 1889">05 de março de 1889</option>
         </select>
       </form>
-    </section>
+    </section><br>
 
     <!---Pergunta 6-->
     <section>
@@ -102,14 +103,14 @@
         <input type="radio" value="37" id="p6d" name="pergunta6" 
         <label for="pl4">37</label><br>
       </form>
-    </section>
+    </section><br>
 
     <!---pergunta 7: pergunta com imagem-->
     <section>
       <h2>Pergunta 7: Qual o nome da linguagem de programação na imagem abaixo?</h2>
-       <img src="pm8.jpeg" alt=""><br>
+       <img src="pm8.jpeg" alt="">
         <input type="text" id="p7" name="pergunta7" placeholder="Digite sua resposta...">
-    </section>
+    </section><br>
 
     <!--Pergunta 8: multipla escolha-->
     <section>
@@ -118,7 +119,7 @@
       <form>
         <input type="text" id="p8" name="pergunta8" placeholder="Digite sua resposta...">
       </form>
-    </section>
+    </section><br>
 
     <!--Pergunta 9-->
     <section>
@@ -142,7 +143,10 @@
   </div> 
 
   <div class="pontuacao-container">
-    <h2>Pontuação Final: <span id="resultado">0</span></h2> 
+    <h2>Pontuação Final: <span id="resultado">0</span></h2>
+  </div>
+  
+  <div>
     <p class="mensagem-pontuacao" id="mensagem"></p>
   </div>
 </section>
@@ -187,8 +191,9 @@
          <li>14 de abriu de 1912</li>
          <li>Pedro Alvares Cabral</li>
          <li>07 de setembro</li>
-         <li>Porque tenho dinheiro</li>
-         <li>21 de dezembro</li>
+         <li>Brasilia</li>
+         <li>15 de novembro de 1889
+         </li>
          <li>32</li>
          <li>Java</li>
          <li>Tiktok</li>
@@ -200,29 +205,28 @@
     <!--Formulario de feedback...-->
     <section>
        <h2>Deixe aqui o seu feedback</h2>
-       <form onsubmit="enviarFeedback(event)">
+       <form onsubmit="enviarFeedback(event)" class="container-feedback">
          <fieldset>
            <legend>Informaçoes de contato</legend><br>
         <label for="nome">Nome</label>
-        <input type="text" id="nome" name="nome"><br>
+        <input type="name" class="nome" id="nome" name="nome"><br>
         <br>
 
         <label for="email">Email</label>
-        <input type="email" id="email" name="email"><br>
+        <input type="email" class="email" id="email" name="email"><br>
         <br>
 
         <label for="comentarios">Comentarios:</label><br>
-        <textarea id="comentarios" name="comentarios"
+        <textarea id="comentarios" name="comentarios" class="comentarios"
         rows="4"cols="50" placeholder="Digite seus comentarios aqui..."></textarea>
-        <button onclick="alert('Feedback enviado')">Enviar</button>
+        <button onclick="alert('Feedback enviado')" class="botao-feedback">Enviar</button>
          </fieldset>
 
        </form>
     </section>
   </main>
   <footer>
-    <p>&copy Quiz de inteligência. Todos os direitos reservados</p>
-    <p>Para conhecer outros quizzes <a href="https://www.youtube.com/" target="-">clique aqui</a></p> 
+    <p>&copy Quiz de inteligência. Todos os direitos reservados</p> 
   </footer>
   <script src="app.js"></script>
 </body>

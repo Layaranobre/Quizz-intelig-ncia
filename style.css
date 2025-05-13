@@ -5,23 +5,39 @@
     box-sizing: border-box;
 }
 
-body {
-    transform: scale(1.0);
-    background: color #f4f0EA;
-    color:#000000;
-    font-family: "Arimo", sans-serif;
-    font-weight: 100;
+html, body { /*Todo conteudo*/
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffffff;
+  color: #000000;
+  font-family: "Arimo", sans-serif;
+  font-weight: 100;
 }
 
-header {
+
+/*Site responsivo - Ajuste de tela*/
+@media(min-width: 320px) and (max-width: 767.98px){  /*Celulares menores*/
+    body {} }
+@media(min-width: 768px) and (max-width: 991.98px){  /*Celulares  e alguns tablets*/
+    body {} }
+@media(min-width: 992px) and (max-width: 1199.98px){  /*Tablets*/
+    body {} }
+@media(min-width: 1200px) and (max-width: 1399.98px){   /*Notebook*/
+    body {} }
+@media(min-width: 1400px){
+    body {} }
+
+header { /*Cabeçario*/
     padding: 2rem;    
     background-color:darkgray;
     color:#622e6f;
     text-align: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
-main {
-    padding: 2rem;
+main { /*Conteudo principal*/
+    padding: 1rem;
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
@@ -43,12 +59,13 @@ input[type="radio"], input[type="checkbox"] {
 }
 
 input[type="text"] {
-     width: 50%;
-     padding: 3px
-     border-radius: 5px;
+     width: 90%;
+     padding: 3px;
+     border-radius: 6px;  
+     border: 1px solid #000000;
 }
 
-input::placeholder {
+input::placeholder { /*Nomes dentro dos input="text"*/
     color:#000000;
 }
 
@@ -57,7 +74,7 @@ select {
     border: none;
 }
 
-.container_data{ /*Input de data*/
+.container_data{  /*Input de data*/
     border: 2px solid #000000;
     border-radius: 7px;
     padding: 4px;
@@ -65,7 +82,7 @@ select {
 }
 
 img { /*Imagem de Java*/
-    width: 15%;
+    width: 30%;
 }
 
 h5 { /*Escreva tudo em minusculo*/
@@ -80,15 +97,16 @@ margin-right: auto;
 }
 
 .calcular-pontuacao{ /* Designer Botão para calcular pontuaçõo*/
-width: 250px;
+width: 170px;
 height: 50px;
 border-radius: 10px;
 background-color: #895796;
 color:white;
+
 }
 
 .reiniciar{ /* Designer Botão para reniciar o quizz*/
-width: 250px;
+width: 170px;
 height: 50px;
 border-radius: 10px;
 background-color: #895796;
@@ -101,8 +119,12 @@ color:white;
 }
 
 .mensagem-pontuacao{ /*Para o designer da mensagem de PONTUAÇÃO*/
-    margin-top: 40px;
+    position: relative;
+    left: 180px;
+    margin-top: 20px;
+    margin-bottom: 30px;
     color: red;
+    
 }
 
 th { /*Cabeçario ta tabela*/
@@ -112,6 +134,36 @@ th { /*Cabeçario ta tabela*/
 ol { /*lista de respostas*/
     margin: 1rem;
 }
+
+/*Formulario de feedback*/
+.nome{ 
+    width: 50%;
+    padding: 2px;
+    border: 1px solid #000000;
+    border-radius: 6px;
+}
+.email{
+    width: 50%;
+    padding: 2px;
+    border: 1px solid #000000;
+    border-radius: 6px;
+    margin-left: 3px;
+}
+.comentarios{
+    width: 80%;
+    border: 1px solid #000000;
+    border-radius: 6px;
+}
+.botao-feedback{
+    width: 15%;
+    border: 2px solid #000000;
+    border-radius: 6px;
+    padding: 2px;
+    position: relative;
+    bottom: 7px;
+    font-weight: bold;
+}
+
 
 footer { /*Rodapé*/
     padding: 2rem;
