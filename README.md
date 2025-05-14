@@ -22,3 +22,5 @@ Abaixo fica as resposta 📚.
 Não vale pesquisar nem olhar nas respostas abaixo antes de tentar em 🤪
 
 <p>Boa sorte!!!🤪</p>
+
+https://layaranobre.github.io/Quizz-intelig-ncia/
