@@ -59,10 +59,10 @@ input[type="radio"], input[type="checkbox"] {
 }
 
 input[type="text"] {
-     width: 90%;
+     width: 70%;
      padding: 3px;
      border-radius: 6px;  
-     border: 1px solid #000000;
+     border: 2px solid #000000;
 }
 
 input::placeholder { /*Nomes dentro dos input="text"*/
@@ -164,9 +164,8 @@ ol { /*lista de respostas*/
     font-weight: bold;
 }
 
-
 footer { /*Rodapé*/
-    padding: 2rem;
+    padding: 1rem;
     background-color: darkgray;
     text-align: center;
 }
