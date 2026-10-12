@@ -24,3 +24,35 @@ Não vale pesquisar nem olhar nas respostas abaixo antes de tentar em 🤪
 <p>Boa sorte!!!🤪</p>
 
 https://layaranobre.github.io/Quizz-intelig-ncia/
+
+<br>
+<br>
+<br>
+<br>
+
+ <h1 align="center">Intelligence Quiz 👩🏼‍🏫</h1>
+
+<br>
+
+<p>It was created to test how up to date you are with topics from around the world.</p>
+<p>It features questions that are completely different from one another, covering a wide variety of topics.</p>
+
+<br>
+
+<p>Here's how it works: you answer all the questions and click the <strong>Submit</strong> button. <br>
+Your score will then appear below, along with a message <br>
+letting you know whether your score was low, reasonable, or very good.</p>
+
+<br>
+
+<p>When you want to start again, simply click the <strong>Restart</strong> button.</p>
+
+The answers are listed below 📚.
+
+<br>
+
+No searching or looking at the answers below before trying, okay? 🤪
+
+<p>Good luck!!! 🤪</p>
+
+https://layaranobre.github.io/Quizz-intelig-ncia/
